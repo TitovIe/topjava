@@ -23,11 +23,12 @@
         else
             color = "green";
 %>
-    <tr>
-        <th><p><span style="font-size: large; color: <%=color%>; font-family: Arial, serif; "><%=meal.getDate()%></span></p></th>
-        <th><p><span style="font-size: large; color: <%=color%>; font-family: Arial, serif; "><%=meal.getTime()%></span></p></th>
-        <th><p><span style="font-size: large; color: <%=color%>; font-family: Arial, serif; "><%=meal.getDescription()%></span></p></th>
-        <th><p><span style="font-size: large; color: <%=color%>; font-family: Arial, serif; "><%=meal.getCalories()%></span></p></th>
+    <tr style="color: <%=color%>">
+        <th><%=meal.getDate()%></th>
+        <th><%=meal.getTime()%></th>
+        <th><%=meal.getDescription()%></th>
+        <th><%=meal.getCalories()%></th>
+    </tr>
 <%
     }
 %>
